@@ -1,0 +1,29 @@
+# Copyright 2022 Niharika Krishnan (@niharikakrishnan)
+# Copyright 2022 Vaibhav Singh (@vaibhav016)
+
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+data_config:
+  BUFFER_SIZE: 400
+  # Each image is 512x512 in size
+  IMG_WIDTH: 200
+  IMG_HEIGHT: 200
+  scale_percent: 30
+  data_path:
+    -  /Users/vaibhavsingh/Desktop/Big_Data/faces_data_small/*.png
+
+train_config:
+  num_workers: 1
+  backend: tensorflow
+  epochs: 10
